@@ -1,5 +1,6 @@
 import React from 'react';
 import "./style.css";
+import { Link } from 'react-router-dom';
 // import Scroll from './scroll.js';
 
 const Navbar = () => {
@@ -23,6 +24,7 @@ return (
         <a href="#events">Events</a>
         <a href="#gallery">Gallery</a>
         <a href="#footer">Contact</a>
+        <Link to="/team">Team</Link>
       </nav>
       <a class="logo2" href="#home"><img src="img/IC LOGO (1).png" alt="Incubation Centre logo" />
       </a>

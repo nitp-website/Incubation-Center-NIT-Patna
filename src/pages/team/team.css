@@ -1,0 +1,23 @@
+body {
+    font-family: Montserrat, sans-serif;
+    background: #28223f;
+    color: white;
+
+}
+
+.team{
+    margin-top: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 100px; */
+}
+

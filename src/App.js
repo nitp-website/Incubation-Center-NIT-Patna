@@ -22,6 +22,7 @@ import Talks_LitsenMore from './pages/talks_LitsenMore';
 import Homes from './Homes.js';
 
 import Pag from './pages/incubations/page/card.js';
+import Team from './pages/team/team.js';
 
 
 
@@ -44,6 +45,7 @@ function App() {
           <Route  path="Notice/index.js" element={<Notice/>}/> 
           <Route path="/login" element={<Login/>}/>
           <Route  path="Notice" element={<Notice/>}/> 
+          <Route path='/team' element={<Team />} />
      < Route path="/register" element={<Register/>}/>
         </Routes>
         {/* <Gallery/> */}

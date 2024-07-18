@@ -1,0 +1,68 @@
+.slides{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    color: white !important;
+}
+
+.slideNames{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 50px;
+    color: white;
+}
+
+.slideNames div{
+    padding: 20px 30px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.active{
+   outline: 5px solid rgb(49, 94, 255);
+}
+
+.infoSection{
+    display: flex;
+}
+
+.dataSection{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.wrapper button{
+    width: fit-content;
+    padding: 15px 20px;
+}
+
+.wrapper p{
+    font-size: 1.5rem;
+}
+
+.imgSection{
+    height: 500px;
+    flex: 1;
+}
+
+.imgSection img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
