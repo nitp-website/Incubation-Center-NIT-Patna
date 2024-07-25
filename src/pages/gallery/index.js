@@ -4,7 +4,7 @@ import img from "./sell_bg.png"
 
 function Gallery() {
   return (
-    <>
+    <div id='gallery'>
     <div className='text1'>
       Gallery
       </div>
@@ -198,7 +198,7 @@ function Gallery() {
       </div>
       
     </div>
-    </>
+    </div>
   );
 }
 
