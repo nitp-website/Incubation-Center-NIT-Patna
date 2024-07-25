@@ -9,7 +9,7 @@ const Navbar = () => {
   //   header.classList.toggle("sticky", this.window.scrollY > 0);
   // })
 
-
+  const [isOpen, setIsOpen] = useState(false)
   return (
 
     <div>
@@ -18,8 +18,7 @@ const Navbar = () => {
       <header className="header">
         <a href="https://www.nitp.ac.in/" className="logo1"><img src="  img/download-removebg-preview.png " alt="NITP_logo" /></a>
         <nav className="navbar">
-          <a className='link' href="http://localhost:3000/">
-          </a>
+          <a className='link' href="http://localhost:3000/">Home</a>
           <div className='link'>
             <a href="#about">About</a>
             <div className="tabInner">
@@ -38,7 +37,27 @@ const Navbar = () => {
           <a href="#gallery" className='link'>Gallery</a>
           <a href="#footer" className='link'>Contact</a>
           <Link className='link' to="/team">Team</Link>
+
         </nav>
+
+        <img onClick={() => setIsOpen(!isOpen)} className="menu" src='/menu.png' />
+        {
+          isOpen && (
+            <div className='mobileMenuContainer'>
+              <div className="mobileMenu">
+                <a className='link' href="http://localhost:3000/">Home</a>
+                <a href="#about">About</a>
+                <a href="#incubations">Incubations</a>
+                <a href="#events" className='link'>Events</a>
+                <a href="#gallery" className='link'>Gallery</a>
+                <a href="#footer" className='link'>Contact</a>
+              </div>
+              <div onClick={() => setIsOpen(false)} className="crossBtn">
+                X
+              </div>
+            </div>
+          )
+        }
         <a className="logo2" href="#home"><img src="img/IC LOGO (1).png" alt="Incubation Centre logo" />
         </a>
       </header>

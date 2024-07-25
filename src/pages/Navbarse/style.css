@@ -7,51 +7,27 @@
     top: 0;
     left: 0;
     width: 100%; 
-    height: 10%;
+    height: 100px;
+    /* height: 10%; */
     /* padding: 2rem 9%; */
-    margin-top: 2%;
     background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    padding: 20px;
+    /* padding: 10px; */
+    padding: 0 30px;
     border-radius: 10px;
-    /* background-color: rgba(128, 128, 128, 0.3); */
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur( 6px );
   }
   
-  .header.sticky {
-    position: fixed;
-    padding: 2px 100px;
-    background: rgba(0, 0, 0, 0.4);
-    opacity: 1;
-    margin-top: 0%;
-    transition: 0.3s; 
-    /* padding-top: 50px; */
-  }
-  /* 
-  .header p {
-    width: 10%;
-    font-size: 1rem;
-  } */
-  
   .logo1 img {
-    width: 100%;
+    width: 50px;
   }
-  
-  a.logo1 {
-    width: 6%;
-  }
-    
   
   .logo2 img {
-    width: 100%;
-  }
-  
-  a.logo2 {
-    width: 6%;
+    width: 50px;
   }
   
   nav.navbar {
@@ -111,5 +87,58 @@
   display: flex;
 }
 
+.menu{
+  display: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
 
+.mobileMenuContainer{
+  display: none;
+}
 
+.crossBtn{
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  padding: 5px 12px;
+  cursor: pointer;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.mobileMenu a:hover {
+  color: rgb(255, 242, 0);
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: block;
+  }
+
+  .mobileMenuContainer{
+    top: 0;
+    left: 0;
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(6px);
+    /* -webkit-backdrop-filter: blur(6px); */
+  }
+
+  .mobileMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+    nav.navbar {
+      display: none;
+    }
+}
