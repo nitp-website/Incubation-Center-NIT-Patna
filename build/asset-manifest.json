@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.b90dd5cc.css",
-    "main.js": "./static/js/main.45626a9c.js",
+    "main.css": "./static/css/main.9a7191ef.css",
+    "main.js": "./static/js/main.7dc3d58b.js",
     "static/media/IMG20230921194023.jpg": "./static/media/IMG20230921194023.35d04bf920cedebeaeff.jpg",
     "static/media/sell_bg.png": "./static/media/sell_bg.8d245d35267faaef521f.png",
     "static/media/dubai.jpg": "./static/media/dubai.593d973b7e03effbfde5.jpg",
@@ -12,14 +12,13 @@
     "static/media/primeicons.eot": "./static/media/primeicons.ff0c4cd79b2ffca2de54.eot",
     "static/media/primeicons.woff": "./static/media/primeicons.8931fda1930c3bd21e96.woff",
     "static/media/primeicons.ttf": "./static/media/primeicons.a5c2a53d1ff7a9ff5933.ttf",
-    "static/media/bicycle-1280x720.jpg": "./static/media/bicycle-1280x720.4bb01443bdb86e36533c.jpg",
     "static/media/primeicons.woff2": "./static/media/primeicons.024b32cc7bf399b1a847.woff2",
     "index.html": "./index.html",
-    "main.b90dd5cc.css.map": "./static/css/main.b90dd5cc.css.map",
-    "main.45626a9c.js.map": "./static/js/main.45626a9c.js.map"
+    "main.9a7191ef.css.map": "./static/css/main.9a7191ef.css.map",
+    "main.7dc3d58b.js.map": "./static/js/main.7dc3d58b.js.map"
   },
   "entrypoints": [
-    "static/css/main.b90dd5cc.css",
-    "static/js/main.45626a9c.js"
+    "static/css/main.9a7191ef.css",
+    "static/js/main.7dc3d58b.js"
   ]
 }

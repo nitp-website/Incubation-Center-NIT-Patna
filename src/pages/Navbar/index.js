@@ -91,10 +91,10 @@ const Navbar = () => {
             <div className='mobileMenuContainer'>
               <div className="mobileMenu">
                 <a className='link' href="http://localhost:3000/">Home</a>
-                <a href="#about">About</a>
-                <a href="#incubations">Incubations</a>
-                <a href="#events" className='link'>Events</a>
-                <a href="#gallery" className='link'>Gallery</a>
+                <a href="#about" onClick={() => setIsOpen(false)}>About</a>
+                <a href="#incubations" onClick={() => setIsOpen(false)}>Incubations</a>
+                <a href="#events" className='link' onClick={() => setIsOpen(false)}>Events</a>
+                <a href="#gallery" className='link' onClick={() => setIsOpen(false)}>Gallery</a>
                 <a href="src/img/background_img/Rulebook.pdf" className='link' download="Tinkering Lab">Tinkering lab</a>
                 {/* <a href="#team" className='link'>Team</a> */}
                 <a href="#footer" className='link'>Contact</a>

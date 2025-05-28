@@ -16,7 +16,7 @@ import Idea from './pages/idea';
 import Form from './pages/faqs';
 import Footer from './pages/footer';
 // import Talks_LitsenMore from './pages/talks_LitsenMore';
-import Gallery from './pages/gallery/index.js';
+import Gallery from './pages/gallery/Gallery.js';
 import GoogleSlider from './pages/googleSlider/GoogleSlider.jsx';
 import React from 'react';
 
@@ -32,6 +32,7 @@ function Homes() {
         < Navbar/>
         <Home />
         <About/>
+        <Gallery/> 
         <Vision/>
         <GoogleSlider />
         <Director/>
@@ -40,7 +41,6 @@ function Homes() {
         <Talks  />
         {/* <Talks_LitsenMore/> */}
         <Events/>
-        {/* <Gallery/>  */}
         <Idea/>
         <Form/>
         {/* <Faqs/> */} 
