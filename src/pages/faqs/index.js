@@ -49,6 +49,35 @@ const Faqs = () => {
           </div>
         </div>
 
+        <div className='contentDiv' data-aos="fade-up" >
+          <input type="checkbox" id="question4" name="q" className="questions" />
+          <div className='outer'>
+            <div className="plus">+</div>
+            <label htmlFor="question4" className="question">
+           What support does the Incubation Centre provide?
+            </label>
+          </div>
+          <div className="answers">
+          We offer:
+          Mentorship from industry experts and faculty
+          Co-working space 
+          Networking opportunities with investors and startups
+          </div>
+        </div>
+
+        <div className='contentDiv' data-aos="fade-up" >
+          <input type="checkbox" id="question5" name="q" className="questions" />
+          <div className='outer'>
+            <div className="plus">+</div>
+            <label htmlFor="question5" className="question">
+            How can I connect  with the Incubation Centre?
+            </label>
+          </div>
+          <div className="answers">
+           Reach out to us through the contact form on our website or email us directly.
+          </div>
+        </div>
+      
         {/* <div className='contentDiv' data-aos="fade-up" >
           <input type="checkbox" id="question4" name="q" className="questions" />
           <div className='outer'>

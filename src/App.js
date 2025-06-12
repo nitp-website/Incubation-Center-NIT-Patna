@@ -23,25 +23,45 @@ import Homes from './Homes.js';
 
 import Timeline from './pages/events/events_timeLine/index.js'
 import Pag from './pages/incubations/page/card.js';
-import Team from './pages/team/team.js';
+import Professor from './pages/team/professor.js';
+import Student from './pages/team/student.js';
 import Gallery1 from './pages/gallery/Gallery.js';
 import React from 'react';
 import Talks_LitsenMore from './pages/talks_LitsenMore/index.js';
- 
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+
 
 
 
 function App() {
-
   // const fun = () => {
   //   return(
   //      <Talks_viewMore/>
   //   );
   // }
+
+
+function ScrollToHash() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
+  return null;
+}
+
   return (
     <div className="App"> 
     {/* < Navbar/> */}
- 
+    <ScrollToHash />
     <Routes>
           {/* <Route  path="talks_LitsenMore/index.js" element={<Talks_LitsenMore/>}/>  */}
           <Route  path="/" element={<Homes />}/> 
@@ -52,9 +72,12 @@ function App() {
           <Route  path="Notice/index.js" element={<Notice/>}/> 
           <Route path="/login" element={<Login/>}/>
           <Route  path="Notice" element={<Notice/>}/> 
-          <Route path='/team' element={<Team />} />
+
+          <Route path='/professor' element={<Professor />} />
+          <Route path='/student' element={<Student />}/>
+          <Route path="/gallery" element={<Gallery1/>}/>
+
           <Route path="/talksmore" element={<Talks_LitsenMore/>}/>
-          
 
     
         </Routes>

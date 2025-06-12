@@ -45,7 +45,7 @@
   } */
   100% {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
-      url(img/background_img/dubai.jpg);
+      url(img/background_img/IMG20230921194023.jpg);
   }
   /* 60% {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
@@ -101,7 +101,7 @@ section {
     /* animation-delay: 4s ; */
     font-size: 10px;
     /* animation: bringImage 2s ease-in-out 1 ; */
-    backdrop-filter:blur(13px);
+    backdrop-filter:blur(1px);
     color:white;
   }
 

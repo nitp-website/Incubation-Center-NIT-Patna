@@ -19,7 +19,7 @@ import Footer from './pages/footer';
 import Gallery from './pages/gallery/Gallery.js';
 import GoogleSlider from './pages/googleSlider/GoogleSlider.jsx';
 import React from 'react';
-
+// import Team from './pages/team/team.js'
 function Homes() {
 
   // const fun = () => {
@@ -32,7 +32,6 @@ function Homes() {
         < Navbar/>
         <Home />
         <About/>
-        <Gallery/> 
         <Vision/>
         <GoogleSlider />
         <Director/>
@@ -41,9 +40,12 @@ function Homes() {
         <Talks  />
         {/* <Talks_LitsenMore/> */}
         <Events/>
+
+        <Gallery/> 
+
         <Idea/>
         <Form/>
-        {/* <Faqs/> */} 
+        {/* <Faqs/>  */}
         <Footer/>
     </div>
   );

@@ -64,65 +64,127 @@ const allImages = [
 ];
 
 function Gallery1() {
-  const [showAll, setShowAll] = useState(false);
-  const [randomImages, setRandomImages] = useState([]);
-  const [enlargedIndexes, setEnlargedIndexes] = useState(new Set());
+//   const [showAll, setShowAll] = useState(false);
+//   const [randomImages, setRandomImages] = useState([]);
+//   const [enlargedIndexes, setEnlargedIndexes] = useState(new Set());
 
-  useEffect(() => {
-    // Select 10 random images once on load
-    const shuffled = [...allImages].sort(() => 0.5 - Math.random());
-    setRandomImages(shuffled.slice(0, 10));
-  }, []);
+//   useEffect(() => {
+//     // Select 10 random images once on load
+//     const shuffled = [...allImages].sort(() => 0.5 - Math.random());
+//     setRandomImages(shuffled.slice(0, 10));
+//   }, []);
 
-  const toggleEnlarge = (index) => {
-    setEnlargedIndexes(prev => {
-      const updated = new Set(prev);
-      if (updated.has(index)) {
-        updated.delete(index);
-      } else {
-        updated.add(index);
-      }
-      return updated;
-    });
-  };
+//   const toggleEnlarge = (index) => {
+//     setEnlargedIndexes(prev => {
+//       const updated = new Set(prev);
+//       if (updated.has(index)) {
+//         updated.delete(index);
+//       } else {
+//         updated.add(index);
+//       }
+//       return updated;
+//     });
+//   };
 
-  const imagesToShow = showAll ? allImages : randomImages;
+//   const imagesToShow = showAll ? allImages : randomImages;
 
-  const renderGrid = (images) => (
-    <div className="image-grid">
-      {images.map((imageSrc, index) => (
-        <div
-          className={`grid-item ${enlargedIndexes.has(index) ? 'enlarged' : ''}`}
-          key={index}
-          onClick={() => toggleEnlarge(index)}
-        >
-          <img src={imageSrc} alt={`img-${index}`} />
-        </div>
-      ))}
-    </div>
-  );
+//   const renderGrid = (images) => (
+//     <div className="image-grid">
+//       {images.map((imageSrc, index) => (
+//         <div
+//           className={`grid-item ${enlargedIndexes.has(index) ? 'enlarged' : ''}`}
+//           key={index}
+//           onClick={() => toggleEnlarge(index)}
+//         >
+//           <img src={imageSrc} alt={`img-${index}`} />
+//         </div>
+//       ))}
+//     </div>
+//   );
 
+//   return (
+//     <>
+//       <Navbar />
+//       <div className="container_header1">
+//         <div id='gallery'>
+//           <h1>Gallery</h1>
+//         </div>
+//       </div>
+
+//       <div className='hhar'>
+//         <div className='text2'>Event Moments :-</div>
+//         {renderGrid(imagesToShow)}
+
+//         <div style={{ textAlign: 'center', marginTop: '20px' }}>
+//           <button onClick={() => setShowAll(!showAll)} className="view-more-btn">
+//             {showAll ? 'Show Less' : 'View More'}
+//           </button>
+//         </div>
+//       </div>
+
+//       <Footer />
+    const galleryImages = [
+      "img1.jpg",
+      "img2.jpg",
+      "img3.jpg",
+      "img4.jpg",
+      "img5.jpg",
+      "img6.jpg",
+      "img7.jpg",
+      "img8.jpg"
+    ]
   return (
     <>
-      <Navbar />
-      <div className="container_header1">
-        <div id='gallery'>
-          <h1>Gallery</h1>
-        </div>
+    <Navbar/>
+    <div class="container_header1">
+      <div>
+      <h1>Gallery</h1>
+      </div>
+      </div>
+    <div className='hhar'> 
+    <div className='text2'>
+      Startups :-
       </div>
 
-      <div className='hhar'>
-        <div className='text2'>Event Moments :-</div>
-        {renderGrid(imagesToShow)}
+   
+            {/* {professors.map((info)=>(
+              <CardGallery name={info.name} post={info.post} role={info.about} image={info.image} linkedin={info.linkedin}/>
+            ))}
+     */}
 
-        <div style={{ textAlign: 'center', marginTop: '20px' }}>
-          <button onClick={() => setShowAll(!showAll)} className="view-more-btn">
-            {showAll ? 'Show Less' : 'View More'}
-          </button>
+      <div className="harshr">
+        <div className="harshr-track">
+          {galleryImages.map((filename, idx) => (
+            <div className='harsh' key={idx}>
+              <img src={`/gallery-images/ic_startups_gallery/${filename}`} alt={`gallery_${idx}`} />
+            </div>
+          ))}
         </div>
       </div>
+      <div style={{ height: "60px" }}></div>
+      <div className="harshr">
+        <div className="harshr-track">
+          {galleryImages.map((filename, idx) => (
+            <div className='harsh' key={idx}>
+              <img src={`/gallery-images/ic_startups_gallery/${filename}`} alt={`gallery_${idx}`} />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div style={{ height: "60px" }}></div>
+      <div className="harshr">
+        <div className="harshr-track">
+          {galleryImages.map((filename, idx) => (
+            <div className='harsh' key={idx}>
+              <img src={`/gallery-images/ic_startups_gallery/${filename}`} alt={`gallery_${idx}`} />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div style={{ height: "60px" }}></div>
+    </div>
+    <Footer/>
 
-      <Footer />
     </>
   );
 }
