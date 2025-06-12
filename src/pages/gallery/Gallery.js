@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react';
 import nit1 from '../EvImages/nit1.JPG';
 import nit4 from '../EvImages/nit4.JPG';
 import nit6 from '../EvImages/nit6.jpeg'
+import nit10 from '../EvImages/nit10.JPG'
 import nit11 from '../EvImages/nit11.jpeg';
 import nit12 from '../EvImages/nit12.jpeg';
 import nit13 from '../EvImages/nit13.JPG';
@@ -54,7 +55,7 @@ import nit60 from '../EvImages/nit60.JPG';
 
 
 const allImages = [
-  nit1,nit4,nit6,nit11, nit12, nit13, nit14, nit15, nit16, nit17, nit18, 
+  nit1,nit4,nit6,nit11,nit10, nit12, nit13, nit14, nit15, nit16, nit17, nit18, 
   nit21, nit22, nit23, nit24, nit25, nit26, nit27, nit28, nit29, 
   nit31, nit34, nit35, nit36, nit37, nit38, nit40,
   nit41, nit42, nit43, nit44,  nit46, nit47, nit48, nit50,
