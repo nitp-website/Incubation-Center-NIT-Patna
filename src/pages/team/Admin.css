@@ -1,0 +1,91 @@
+/* Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, transparent, #000),
+      url(../../../public/img/image.jpg.jpg  ); /* path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Login Box */
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+.login-box h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Input Fields */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Placeholder */
+.login-box input::placeholder {
+  color: black;
+  font-size: 14px;
+  opacity: 1;
+}
+
+/* Focus */
+.login-box input:focus {
+  border-color: #66a6ff;
+}
+
+/* Button */
+.login-box button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #66a6ff;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #558ee9;
+}
+
+/* Disabled Button */
+.login-box button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}

@@ -89,6 +89,7 @@ const Navbar = () => {
             <div className="tabInner">
               <Link to="/professor">Professors</Link>
               <Link to="/student">Students</Link>
+              <Link to="/Admin">Admin</Link>
             </div>
           </div> 
           <a href="https://tinkering-lab.onrender.com/" className='link' download="Tinkering Lab">Tinkering lab</a>
