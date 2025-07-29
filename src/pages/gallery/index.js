@@ -84,7 +84,7 @@ const Gallery = () => {
   return (
     <>
       <div className="container_header1">
-        <h1>All Event Photos</h1>
+        
       </div>
       <div id="gallery" className="gallery">
         <h1 className="h11" data-aos="fade-down">Gallery</h1>
