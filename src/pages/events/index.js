@@ -11,7 +11,7 @@ const Events = () => {
       <section className="events" id="events">
 
         <div className="event_header"> 
-          <h1 data-aos="fade-down">Events</h1>
+          <h1 data-aos="fade-down"  style={{ color: "#0ef" }} >Events</h1>
           <p data-aos="fade">The Incubation Center organizes transformative events that empower entrepreneurs with knowledge, networking opportunities, and practical skills. These events foster innovation, collaboration, and growth within the startup community, driving forward impactful business ventures. </p>
         </div> 
         <div className="events_box"  >

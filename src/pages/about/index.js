@@ -22,7 +22,7 @@ const About = () => {
   </div>
 
   <div class="about-content " > 
-    <div className='heading'><h1 data-aos="fade-down">About Us</h1></div>
+    <div className='heading'><h1 data-aos="fade-down" >About <span style={{color:"#0ef"}}> Us</span></h1></div>
     
     <h3  data-aos="fade-right" >What we do ?</h3>
     <p data-aos="fade-up" > The Incubation Centre at the National Institute of Technology 

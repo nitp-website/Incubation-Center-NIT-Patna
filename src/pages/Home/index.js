@@ -116,7 +116,7 @@ const Home = () => {
         <div className="grid-2">
           <div class="notice" data-aos="fade-up" data-aos-duration="1500">
             <div className="notice-container">
-              <div className="notice-title">Notices</div>
+              <div className="notice-title lkclr">Notices</div>
               <div className="notice-list">
                 {notices.map((notice, i) => (
                   <div key={i} className="notice-item">
