@@ -173,7 +173,7 @@ export default function Card({ name, post, role, image, linkedin, email, isProfe
         }
         .role {
           background: rgba(255, 215, 0, 0.15);
-          color: #ffd700;
+          color:rgb(255, 255, 255);
           border: 1.5px solid #ffd70099;
         }
         .prof-badge {
@@ -196,9 +196,6 @@ export default function Card({ name, post, role, image, linkedin, email, isProfe
       <div className="card-container">
         <div className="modern-card">
           <img src={image} alt={`${name}`} className="profile-img" />
-          {isProfessor && (
-            <div className="prof-badge">PROFESSOR</div>
-          )}
           <h2 className="name">{name}</h2>
           <p className="post">{post}</p>
           <span className="role">{role}</span>
