@@ -34,7 +34,7 @@ const Director = () => {
 						<img class="postcard__img" src="img/team/bharatgupta.jpg" alt="Image Title" />
 					</a>
 					<div class="postcard__text">
-						<h1 class="postcard__title red"><a href="#">Prof IN-CHARGE
+						<h1 class="postcard__title red"><a href="#">Professor in Charge
             INCUBATION CENTER</a></h1>
 						<div class="postcard__subtitle small">
 							<time datetime="2020-05-25 12:00:00">
