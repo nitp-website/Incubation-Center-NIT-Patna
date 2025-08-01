@@ -1,55 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../../supabaseClient';
-
- import nit1 from './GalleryImages/nit1.JPG';
-import nit4 from './GalleryImages/nit4.JPG';
-import nit6 from './GalleryImages/nit6.jpeg';
-import nit10 from './GalleryImages/nit10.JPG';
-import nit11 from './GalleryImages/nit11.jpeg';
-import nit12 from './GalleryImages/nit12.jpeg';
-import nit13 from './GalleryImages/nit13.JPG';
-import nit14 from './GalleryImages/nit14.JPG';
-import nit15 from './GalleryImages/nit15.JPG';
-import nit17 from './GalleryImages/nit17.JPG';
-import nit18 from './GalleryImages/nit18.JPG';
-import nit21 from './GalleryImages/nit21.JPG';
-import nit22 from './GalleryImages/nit22.JPG';
-import nit23 from './GalleryImages/nit23.JPG';
-import nit24 from './GalleryImages/nit24.JPG';
-import nit25 from './GalleryImages/nit25.JPG';
-import nit26 from './GalleryImages/nit26.JPG';
-import nit27 from './GalleryImages/nit27.JPG';
-import nit28 from './GalleryImages/nit28.JPG';
-import nit29 from './GalleryImages/nit29.JPG';
-
-import nit31 from './GalleryImages/nit31.JPG';
-// import nit2 from './GalleryImages/nit12.jpeg';
-// import nit33 from './GalleryImages/nit13.JPG';
-import nit34 from './GalleryImages/nit34.JPG';
-import nit35 from './GalleryImages/nit35.JPG';
-import nit37 from './GalleryImages/nit37.JPG';
-import nit38 from './GalleryImages/nit38.JPG';
-import nit40 from './GalleryImages/nit40.JPG';
-import nit41 from './GalleryImages/nit41.JPG';
-import nit42 from './GalleryImages/nit42.JPG';
-import nit43 from './GalleryImages/nit43.JPG';
-import nit44 from './GalleryImages/nit44.JPG';
-import nit46 from './GalleryImages/nit46.JPG';
-import nit47 from './GalleryImages/nit47.JPG';
-import nit48 from './GalleryImages/nit48.JPG';
-import nit50 from './GalleryImages/nit50.JPG';
-
-import nit51 from './GalleryImages/nit51.JPG';
-import nit52 from './GalleryImages/nit52.JPG';
-import nit53 from './GalleryImages/nit53.JPG';
-import nit54 from './GalleryImages/nit54.JPG';
-import nit55 from './GalleryImages/nit55.JPG';
-import nit56 from './GalleryImages/nit56.JPG';
-import nit57 from './GalleryImages/nit57.JPG';
-import nit58 from './GalleryImages/nit58.JPG';
-import nit59 from './GalleryImages/nit59.JPG';
-
 import Navbar from '../Navbar';
 import Footer from '../footer';
 import './Gallery.css';
@@ -167,7 +118,7 @@ const Gallery1 = () => {
             );
           })}
 
-//     <Navbar/>
+{//     <Navbar/>
 //      <div className="container_header1">
 //         <h1 >All Event Photos</h1>
 //       </div>
@@ -253,7 +204,7 @@ const Gallery1 = () => {
 //           <div className='imgdiv' data-aos="zoom-in">
 //           <img src={nit38} alt="img" className='imgg'/>
 //           </div>  
-
+}
         </div>
       </div>
       <Footer />
