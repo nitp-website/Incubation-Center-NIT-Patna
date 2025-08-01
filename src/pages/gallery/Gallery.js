@@ -1,4 +1,4 @@
-import nit1 from './GalleryImages/nit1.JPG';
+ import nit1 from './GalleryImages/nit1.JPG';
 import nit4 from './GalleryImages/nit4.JPG';
 import nit6 from './GalleryImages/nit6.jpeg';
 import nit10 from './GalleryImages/nit10.JPG';
@@ -62,10 +62,10 @@ const Gallery1 = () => {
     <>
     <Navbar/>
      <div className="container_header1">
-        <h1>All Event Photos</h1>
+        <h1 >All Event Photos</h1>
       </div>
     <div id="gallery" className='gallery'>
-      <h1 className='h11' data-aos="fade-down"> Gallery</h1>
+      <h1 className='h11' data-aos="fade-down" style={{ color: "#0ef" }} > Gallery</h1>
       <div className="gallery1">
         <div className='gallerydiv'  >
           <div className='imgdiv' data-aos="zoom-in">
