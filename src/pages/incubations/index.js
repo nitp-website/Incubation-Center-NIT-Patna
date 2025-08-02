@@ -23,7 +23,7 @@ const Incubations = () => {
       <section className='incubations' id='incubations'>
 
         <div class="incubations_header"> 
-          <h1 data-aos="fade-down">Incubations</h1>
+          <h1 data-aos="fade-down"   style={{ color: "#0ef" }}>Incubations</h1>
           <p  data-aos="fade-right"> NIT Patna's Incubation Center fosters a statewide startup ecosystem, offering essential infrastructure like office spaces, meeting rooms, networking platforms, and management support for aspiring entrepreneurs.</p>
         </div>
 
