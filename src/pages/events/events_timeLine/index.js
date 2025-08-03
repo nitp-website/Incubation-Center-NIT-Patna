@@ -57,7 +57,42 @@ achieving success.
                 <span class="left-container-arrow"></span>
             </div>
         </div>
-        {/* <div class="container right-container">
+        <div class="container right-container">
+        <img src=" img/IC LOGO (1).png " alt='logo'/>
+            <div class="text-box">
+                <h2>Capacity Building Program for Design and Entrepreneurship (CBDE)</h2>
+                <small>21/03/2025</small>
+                <p>CBDE - The Capacity Building Program for Design and Entrepreneurship (CBDE) is designed to build creative problem-solving and entrepreneurial skills within Higher Education Institutions. As a key part of the Malaviya Mission Teacher Training Programme, it empowers faculty and students through design thinking and mentorship, with IIITDM Kancheepuram acting as the coordinating center.
+
+                </p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+        <div class="container left-container">
+        <img src=" img/IC LOGO (1).png " alt='logo'/>
+            <div class="text-box">
+                <h2>STARTUP SIMULATION 2025</h2>
+                <small>09/02/2025</small>
+                <p>StartUp Simulation 2025 - "STARTUP SIMULATION 2025" is a hands-on workshop offering a practical experience of the entrepreneurial process. Participants will go through a simulation of how to secure seed funding and incubation support from the Startup Bihar program.
+
+                </p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+        <div class="container right-container">
+        <img src=" img/IC LOGO (1).png " alt='logo'/>
+            <div class="text-box">
+                <h2>CBDE Faculty Orientation</h2>
+                <small>22/07/2025</small>
+                <p>CBDE Orientation 2nd batch - Orientation-Cum-Induction Program to welcome the second batch of faculty members and students into the Capacity Building for Design and Entrepreneurship (CBDE) initiative. This event marked the official start for the new participants, encouraging them to connect and grow together.
+
+                </p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+
+
+         {/* <div class="container right-container">
         <img src=" img/IC LOGO (1).png " alt='logo'/>
             <div class="text-box">
                 <h2>Event name4</h2>
