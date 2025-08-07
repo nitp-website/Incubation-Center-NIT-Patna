@@ -108,7 +108,7 @@ const Home = () => {
               <a href=""><i class='bx bxs-message-rounded-dots'></i></a>
           </div> --> */}
             <a href="#idea" class="btn">
-              Incubate
+              Incubate u'r Idea
             </a>
           </div>
         </div>
