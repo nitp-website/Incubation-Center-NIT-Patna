@@ -2,8 +2,21 @@ import React from 'react'
 import './style.css' 
 import Footer from '../../footer'
 import Navbar from '../../Navbar';
+import { useEffect } from 'react';
 
 function Timeline() {
+
+  useEffect(() => {
+  if (window.location.hash) {
+    const id = window.location.hash.replace('#', '');
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+}, []);
+
+
   return (
     <div className='events_timeline'> 
       <Navbar/>
@@ -13,9 +26,9 @@ function Timeline() {
       </div>
       </div>
     <div class="timeline">
-      <div class="container left-container">
+      <div class="container left-container" id="event1">
             <img src=" img/IC LOGO (1).png " alt='logo'/>
-            <div class="text-box">
+            <div class="text-box" >
                 <h2>Orientation Session 2023</h2>
                 <small>21/09/2023</small>
                 <p>The orientation program aimed to familiarize the students of 2023 
@@ -27,7 +40,7 @@ innovation.
             </div>
             <span class="left-container-arrow"></span>
         </div>
-        <div class="container right-container">
+        <div class="container right-container" id="event2">
         <img src=" img/IC LOGO (1).png " alt='logo'/>
             <div class="text-box">
                 <h2>PitchTember 2023</h2>
@@ -41,7 +54,7 @@ noteworthy contributions.
                 <span class="right-container-arrow"></span>
             </div>
         </div>
-        <div class="container left-container">
+        <div class="container left-container" id="event3">
         <img src=" img/IC LOGO (1).png " alt='logo'/>
             <div class="text-box">
                 <h2>Stock Market Simulation</h2>
@@ -57,7 +70,7 @@ achieving success.
                 <span class="left-container-arrow"></span>
             </div>
         </div>
-        <div class="container right-container">
+        <div class="container right-container" id="event4">
         <img src=" img/IC LOGO (1).png " alt='logo'/>
             <div class="text-box">
                 <h2>Capacity Building Program for Design and Entrepreneurship (CBDE)</h2>
@@ -68,7 +81,7 @@ achieving success.
                 <span class="right-container-arrow"></span>
             </div>
         </div>
-        <div class="container left-container">
+        <div class="container left-container" id="event5">
         <img src=" img/IC LOGO (1).png " alt='logo'/>
             <div class="text-box">
                 <h2>STARTUP SIMULATION 2025</h2>
@@ -79,7 +92,7 @@ achieving success.
                 <span class="left-container-arrow"></span>
             </div>
         </div>
-        <div class="container right-container">
+        <div class="container right-container" id="event6">
         <img src=" img/IC LOGO (1).png " alt='logo'/>
             <div class="text-box">
                 <h2>CBDE Faculty Orientation</h2>

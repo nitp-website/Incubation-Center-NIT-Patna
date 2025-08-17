@@ -152,6 +152,19 @@ margin: auto;
     width:100px;
    
   }
+  .container_header1 {
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;  
+  background: linear-gradient(180deg, transparent, #000),
+    url(../../../public/img/image.jpg.jpg  );
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
   .events_btn .btn{
  font-size: 1rem;
  margin: auto;
@@ -174,4 +187,8 @@ margin: auto;
   font-size: 1rem;
   padding-top: 5px;
  }
+}
+
+#event1, #event2, #event3, #event4, #event5, #event6 {
+  scroll-margin-top: 150px;
 }
