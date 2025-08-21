@@ -12,7 +12,6 @@
         background-image: radial-gradient(#142850 0.8px, #000000 0.8px);
         background-size: 16px 16px;
 }
-
 .timeline{
     position: relative;
     max-width: 1200px;
@@ -22,8 +21,8 @@
     padding: 10px 50px;
     position: relative;
     width: 50%;
-    /* animation: movedown 1s linear forwards; */
-    /* opacity: 0; */
+    animation: movedown 1s linear forwards;
+    opacity: 0;
 }
 @keyframes movedown {
     0%{
