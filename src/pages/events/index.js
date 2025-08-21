@@ -56,60 +56,11 @@ const Events = () => {
             <h1>Stock Market Simulation</h1>
             <p>Date: 09/02/2024</p>
             <p>Venue: Online</p>
-     <a href="/timeline" className="btn">View More</a>
+     <a href="events timeline/index.html" className="btn">View More</a>
    </div>
  </div>
 
           </div>
-
-           <div className="flip-card"data-aos="flip-left">
- 
- <div className="flip-card-inner">
-   <div className="flip-card-front">
-     <img src="img/events/Events/event1.jpg" alt="event"/>
-   </div>
-   <div className="flip-card-back">
-            <h1>StartUp Simulation 2025</h1>
-            <p>Date: 08/02/2025</p>
-            <p>Venue: Online</p>
-     <a href="/timeline" className="btn">View More</a>
-   </div>
- </div>
-
-          </div>
-
-           <div className="flip-card"data-aos="flip-left">
- 
- <div className="flip-card-inner">
-   <div className="flip-card-front">
-     <img src="img/events/Events/event3.png" alt="event"/>
-   </div>
-   <div className="flip-card-back">
-            <h1>CBDE 2025</h1>
-            <p>Date: 21/03/2025</p>
-            <p>Venue: Online</p>
-     <a href="/timeline" className="btn">View More</a>
-   </div>
- </div>
-
-          </div>
-            <div className="flip-card"data-aos="flip-left">
- 
- <div className="flip-card-inner">
-   <div className="flip-card-front">
-     <img src="img/events/Events/event2.png" alt="event"/>
-   </div>
-   <div className="flip-card-back">
-            <h1>CBDE Faculty Orientation</h1>
-            <p>Date: 22/07/2025</p>
-            <p>Venue: Online</p>
-     <a href="/timeline" className="btn">View More</a>
-   </div>
- </div>
-
-          </div>
-
-          
         </div>
 
         <div className="events_btn">
