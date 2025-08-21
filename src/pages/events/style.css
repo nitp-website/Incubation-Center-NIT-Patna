@@ -28,22 +28,17 @@ width: 100%;
 
 .events_box{
   display: flex;
-  flex-wrap: wrap;
   justify-content:space-evenly   ;
   align-items: center;  
   width: 100%;
-  gap:2rem;
+  /* padding-bottom: 5rem; */
 }
-
-
-
 
 .flip-card {
   background-color: transparent;
   width: 300px;
   height: 300px;
   perspective: 1000px;  
-   object-fit: cover;
 }
 
 .flip-card-inner {
@@ -129,12 +124,10 @@ margin: auto;
   .flip-card{
     border-radius: 20px;
     height:200px;
-    width:200px;
-    
+    width:200px
   }
   .flip-card-front {
     border-radius: 60px;
-   
   }
   .flip-card-back {
     border-radius: 10px;
