@@ -52,6 +52,11 @@
   object-fit: cover;
   transition: transform 0.5s;
 }
+.events_btn{
+  width: 93%;
+  display: flex;
+  justify-content: end;
+}
 @media screen and (max-width: 765px){
   .gallerydiv{
     width: 30%;
@@ -86,4 +91,19 @@
     width: 30%;
   }
   
+}
+.change-button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #007bff; /* Bootstrap blue */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.change-button:hover {
+  background-color: #0056b3;
 }

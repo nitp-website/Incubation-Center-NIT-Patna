@@ -23,7 +23,7 @@ const Incubations = () => {
       <section className='incubations' id='incubations'>
 
         <div class="incubations_header"> 
-          <h1 data-aos="fade-down">Incubations</h1>
+          <h1 data-aos="fade-down"   style={{ color: "#0ef" }}>Incubations</h1>
           <p  data-aos="fade-right"> NIT Patna's Incubation Center fosters a statewide startup ecosystem, offering essential infrastructure like office spaces, meeting rooms, networking platforms, and management support for aspiring entrepreneurs.</p>
         </div>
 
@@ -84,8 +84,9 @@ const Incubations = () => {
                   <p class="card__description">
                   Onibus offers a service-oriented app and web platform facilitating efficient communication between schools and parents about students' activities.
                   </p>
-
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -103,7 +104,9 @@ const Incubations = () => {
                   Expert mobile mechanics providing reliable vehicle care and service at competitive prices, conveniently at your home or office.
                   </p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -121,7 +124,9 @@ const Incubations = () => {
                   Shekhar Telesystems revolutionizes water management with advanced solutions for hassle-free living and upgraded surroundings. 
                   </p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -140,7 +145,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:himanshu@schooglink.com'>himanshu@schooglink.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -159,7 +166,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:harendra.niper@gmail.com'>harendra.niper@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -179,7 +188,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:satishkp113@gmail.com'>satishkp113@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -198,7 +209,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:sudhirsinha2002@yahoo.com'>sudhirsinha2002@yahoo.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -219,7 +232,9 @@ const Incubations = () => {
                   There is no physical contribution of any person in all these processes.
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:sarrafkundan@gmail.com'>sarrafkundan@gmail.com</a></p>
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -240,7 +255,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:gupta656mayank@gmail.com'>gupta656mayank@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -259,7 +276,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:thegauravmishra@yahoo.com'>thegauravmishra@yahoo.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -278,7 +297,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:omkarkumar39@gmail.com'>omkarkumar39@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -297,7 +318,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='princesubham862@gmail.com'>princesubham862@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -318,7 +341,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:adityaamar.garva@gmail.com'>adityaamar.garva@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -341,7 +366,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='contactindicstudios@gmail.com'>contactindicstudios@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -360,7 +387,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:competitionkingoff@gmail.com'>competitionkingoff@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -382,7 +411,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:antariksha.rnd@gmail.com'>antariksha.rnd@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -401,7 +432,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:priyapiya9155@gmail.com'>priyapiya9155@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -420,7 +453,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:muzvishalkumar417@gmail.com'>muzvishalkumar417@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -439,7 +474,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:nodewaptechnology@gmail.com'>nodewaptechnology@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -458,7 +495,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:wheelsplay.in@gmail.com'>wheelsplay.in@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
          </SwiperSlide>
@@ -477,7 +516,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:kapil75k@gmail.com'>kapil75k@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -496,7 +537,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:rajnandaniswrup113@gmail.com'>rajnandaniswrup113@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -515,7 +558,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:medhasobti@gmail.com'>medhasobti@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -534,7 +579,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:ambopqc@gmail.com'>ambopqc@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -553,7 +600,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:amitmce2019@gmail.com'>amitmce2019@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -575,7 +624,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:grokciecom@gmail.com'>grokciecom@gmail.com</a></p>
 
+                 <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -594,7 +645,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:rishidev22@outlook.com'>rishidev22@outlook.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -616,7 +669,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:pariharakshat02@gmail.com'>pariharakshat02@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -638,7 +693,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:sankalpmodi0101@gmail.com'>sankalpmodi0101@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -660,7 +717,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:dpandey593@gmail.com'>dpandey593@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -682,7 +741,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:tarun.double2016@gmail.com'>tarun.double2016@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -701,7 +762,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:adrovertechnologies@gmail.com'>adrovertechnologies@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -722,7 +785,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:alisharanjan19@gmail.com'>alisharanjan19@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -743,7 +808,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:nk1535628@gmail.com'>nk1535628@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -763,7 +830,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:difellysi@gmail.com'>difellysi@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -785,7 +854,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:kartbihar@gmail.com'>kartbihar@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -806,7 +877,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:kavitasingh4242@gmail.com'>kavitasingh4242@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -826,7 +899,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:kprience4@gmail.com'>kprience4@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -847,7 +922,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:naveenbhu2019@gmail.com'>naveenbhu2019@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -868,7 +945,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:sahpriyanshu71@gmail.com'>sahpriyanshu71@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -890,7 +969,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:adarshavinav123@gmail.com'>adarshavinav123@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -912,7 +993,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:priyanshu.khangar417@gmail.com'>priyanshu.khangar417@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -933,7 +1016,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:rabelectron@gmail.com'>rabelectron@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -953,7 +1038,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:kr.ashuu@gmail.com'>kr.ashuu@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -972,7 +1059,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:noviotechnologies@gmail.com'>noviotechnologies@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -994,7 +1083,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:businesswithbhardwaj07@gmail.com'>businesswithbhardwaj07@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
@@ -1014,7 +1105,9 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:jhav5225@gmail.com'>jhav5225@gmail.com</a></p>
 
+                  <div class="card_footer">
                   <a href="#" class="card__button">View More</a>
+                  </div>
                 </div>
               </article>
             </SwiperSlide>
