@@ -6,7 +6,7 @@ const Vision = () => {
     <div>
       <section class="vision" id="vision">
     <div class="vision_header">
-      <h1  data-aos="fade-down">Our Vision</h1>
+      <h1  data-aos="fade-down">Our <span style={{ color: "#0ef;" }}>Vision</span></h1>
     </div>
     <div class="vision_container">
 

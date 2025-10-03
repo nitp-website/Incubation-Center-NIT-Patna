@@ -1,70 +1,80 @@
-import React, { useState } from 'react'
-import './login.css'
+import React, { useState } from 'react';
+import './login.css';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../Navbar';
-const Login=()=>{
-   const navigate= useNavigate();
-    const [input,setinput]=useState({
-        email : "",
-        password: ""
-    })
-    const auth=[{email:"ankurverma6670@gmail.com",password: "Ankur@6770"},
-        {email:"ankurverma7707@gmail.com",password: "Ankur@6670"},
-        {email:"pankaj5656@gmail.com",password: "121212"}
+import axios from 'axios';
 
-    ];
-     
-    const handleLogin=(e)=>{
-        e.preventDefault();
-           console.log(input);
-   
-    const data = auth.find(item=>item.email === input.email && item.password === input.password)
-    console.log(data)
-     //     console.log("hello")
-    //         const loggeduser=JSON.parse(localStorage.getItem("user"));
-    //      console.log("loggeduser:",loggeduser);
-    //      if(loggeduser===null){
-    //         alert("Register first");
-    //      }
-    //    else if(input.email===loggeduser.email && input.password === loggeduser.password){
-    //        navigate("/Notice");
-    //      localStorage.setItem("loggedin",true)
-    //    }
-    if(data){
-          console.log("user find")
-          localStorage.setItem('loggedin','true');
-          navigate("/Notice")
+const Login = () => {
+  const navigate = useNavigate();
+
+  const [input, setInput] = useState({
+    email: "",
+    password: ""
+  });
+
+
+const handleLogin = async (e) => {
+  e.preventDefault();
+
+  try {
+    const res = await axios.post('http://localhost:5000/api/login', input);
+    
+    localStorage.setItem('loggedin', 'true');
+    localStorage.setItem('role', res.data.role);
+    localStorage.setItem('username', res.data.name);
+
+    if (res.data.role === 'admin') {
+      navigate('/admin-dashboard');
+    } else {
+      navigate('/Notice');
     }
-       else{
-        alert("Wrong credentials");
-       }
-    }
-    return (
-     
-            
-          <div className="background">
-            <Navbar/>
-          <form onSubmit={handleLogin}>
-                <h3>Login Here</h3>
 
-                <label htmlFor="username">Username</label>
-                <input type="text"name="email" value={input.value} onChange={(e)=>setinput({
-                  ...input,[e.target.name]: e.target.value
-                })} placeholder="Email or Phone" id="username" />
+  } catch (err) {
+    alert(err.response?.data?.message || 'Login failed');
+  }
+};
 
-                <label htmlFor="password">Password</label>
-                <input type="password" name="password" value={input.value} onChange={(e)=>setinput({
-                 ...input, [e.target.name]: e.target.value
-                })} placeholder="Password" id="password" />
 
-                <button className="login" type="submit">Log In</button>
-             
-                
-            </form>
-            </div>
-           
-     
-      
-    )
-}
+  const auth = [
+    { email: "ankurverma6670@gmail.com", password: "Ankur@6770" },
+    { email: "ankurverma7707@gmail.com", password: "Ankur@6670" },
+    { email: "pankaj5656@gmail.com", password: "121212" }
+  ];
+
+  
+
+  return (
+    <div className="background">
+      <Navbar />
+      <form onSubmit={handleLogin}>
+        <h3>Login Here</h3>
+
+        <label htmlFor="email">Email</label>
+        <input
+          type="text"
+          name="email"
+          value={input.email}
+          onChange={(e) => setInput({ ...input, email: e.target.value })}
+          placeholder="Email or Phone"
+          id="email"
+          required
+        />
+
+        <label htmlFor="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          value={input.password}
+          onChange={(e) => setInput({ ...input, password: e.target.value })}
+          placeholder="Password"
+          id="password"
+          required
+        />
+
+        <button className="login" type="submit">Log In</button>
+      </form>
+    </div>
+  );
+};
+
 export default Login;

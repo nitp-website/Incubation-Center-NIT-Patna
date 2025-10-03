@@ -37,21 +37,21 @@
 @keyframes change {
   0% {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
-      url(img/background_img/IMG20230921194023.jpg);
+      url(img/background_img/home1.jpg);
   }
-  /* 50% {
+  67% {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
-      url(img/background_img/bicycle-1280x720.jpg);
-  } */
+      url(img/background_img/home2.jpg);
+  }
   100% {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
-      url(img/background_img/dubai.jpg);
+      url(img/background_img/home3.jpg);
   }
-  /* 60% {
+  33% {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
-      url(img/background_img/517669.jpg);
+      url(img/background_img/home4.jpg);
   }
-  80% {
+/*   80% {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
       url(img/background_img/5487146.jpg);
   }
@@ -88,60 +88,7 @@ section {
     width: 100%;
   }
  
-  .notice { 
-    /* height: 380px; */
-    /* box-shadow: 3px 3px 15px black; */
-    border-radius: 25px; 
-    background: transparent;
-    border: dashed 5px var(--main-color);  
-    height: 47vh;
-    overflow: hidden;
-    width: 22vw;  
-    animation: floatImage 4s ease-in-out infinite; 
-    /* animation-delay: 4s ; */
-    font-size: 10px;
-    /* animation: bringImage 2s ease-in-out 1 ; */
-    backdrop-filter:blur(13px);
-    color:white;
-  }
-
-  .notice h1 {
-    padding: 1rem;
-    text-align: center;
-    font-size: 3rem;
-    color:white;
-
-  }
-
-  .notice hr{
-    height:2px;
-    border-width:0;
-    color:gray;
-    background-color:gray;
-    width: auto;   
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .notice-content{
-    font-size: 1.8rem; 
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 9%;
-    margin-top: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    list-style: initial;
-      color:white;
-  } 
-  .notice-content li{
-    color:white;
-  }
-
-  .notice:hover{
-    animation-play-state: paused;
-  }
+ 
 
   /* @keyframes bringImage {
     0% {

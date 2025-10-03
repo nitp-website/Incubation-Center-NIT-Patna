@@ -1,6 +1,6 @@
 import Swal from 'sweetalert2';
 
-const IdeaJs = (e) => {
+const IdeaJs = async (e) => {
   e.preventDefault(); // Prevent the default form submission behavior
 
   const form = document.querySelector("form");
@@ -9,63 +9,6 @@ const IdeaJs = (e) => {
   const phone = document.getElementById("phone");
   const subject = document.getElementById("subject");
   const message = document.getElementById("message");
-
-  function sendEmail() {
-    console.log("sendEmail");
-
-    const bodyMessage =
-      `Full Name: ${fullName.value} <br>Email: ${email.value} <br>Phone Number: ${phone.value} <br>Subject: ${subject.value} <br>Message: ${message.value} <br>`;
-
-    const config = {
-      Host: "smtp.elasticemail.com",
-      Username: "ankurverma6670@gmail.com",
-      Password: "B5F5A90594C14CD9034B3A8397012B3D90A0",
-      To: "ankurverma6670@gmail.com",
-      From: "ankurverma6670@gmail.com",
-      Subject: subject.value,
-      Body: bodyMessage,
-    };
-
-    if (window.Email) {
-      console.log(config);
-      window.Email.send(config)
-        .then((message) => {
-          if (message === "OK") {
-            Swal.fire({
-              title: 'Good job!',
-              text: 'Message sent successfully!',
-              icon: 'success',
-              confirmButtonText: 'Cool'
-            });
-          } else {
-            console.error("Failed to send email:", message);
-            Swal.fire({
-              title: 'Error!',
-              text: 'Failed to send email: ' + message,
-              icon: 'error',
-              confirmButtonText: 'OK'
-            });
-          }
-        })
-        .catch((error) => {
-          console.error("Error sending email:", error);
-          Swal.fire({
-            title: 'Error!',
-            text: 'Error sending email: ' + error.message,
-            icon: 'error',
-            confirmButtonText: 'OK'
-          });
-        });
-    } else {
-      console.error("Email service not available.");
-      Swal.fire({
-        title: 'Error!',
-        text: 'Email service not available.',
-        icon: 'error',
-        confirmButtonText: 'OK'
-      });
-    }
-  }
 
   function checkInputs() {
     const items = document.querySelectorAll(".item");
@@ -118,8 +61,41 @@ const IdeaJs = (e) => {
     !subject.classList.contains("error") &&
     !message.classList.contains("error")
   ) {
-    sendEmail();
-    form.reset();
+    const formData = new FormData(form);
+    formData.append("access_key", "da9045aa-c37f-471c-a85d-a94d37e076aa");
+    formData.append("from_name",fullName.value)
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        Swal.fire({
+          title: 'Success!',
+          text: 'Your message has been sent successfully!',
+          icon: 'success',
+          confirmButtonText: 'OK'
+        });
+        form.reset();
+      } else {
+        Swal.fire({
+          title: 'Error!',
+          text: data.message || 'Something went wrong.',
+          icon: 'error',
+          confirmButtonText: 'OK'
+        });
+      }
+    } catch (error) {
+      Swal.fire({
+        title: 'Error!',
+        text: error.message || 'Something went wrong.',
+        icon: 'error',
+        confirmButtonText: 'OK'
+      });
+    }
   }
 };
 

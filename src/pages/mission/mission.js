@@ -6,7 +6,7 @@ const Mission = () => {
     <div>
       <section class="goals" id="goals">
     <div class="container">
-      <h1  data-animation="slideInUp" data-animation-delay=".3s">Our Mission</h1>
+      <h1  data-animation="slideInUp" data-animation-delay=".3s"  style={{ color: "#0ef" }}>Our Mission</h1>
       <div class=" container_details ">
         <div class="card__container">
           <article class="card__article"  data-animation="zoomReverseIn" data-animation-delay=".3s">

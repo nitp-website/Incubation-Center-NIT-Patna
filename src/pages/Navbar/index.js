@@ -62,26 +62,37 @@ const Navbar = () => {
       <header className="header" style={navbarStyle}>
         <a href="https://www.nitp.ac.in/" className="logo1" style={logoStyle}><img src="  img/download-removebg-preview.png " alt="NITP_logo" /></a>
         <nav className="navbar">
-          <a className='link' href="#home">Home</a>
+          <div className="link">
+            <Link to="/#home">Home</Link>
+          </div>
           <div className='link'>
-            <a href="#about">About</a>
+            <Link to="/#about">About Us</Link>
             <div className="tabInner">
-              <a href="#vision">Our Vision</a>
-              <a href="#support">Our Support</a>
+              <Link to="/#vision">Our Vision</Link>
+              <Link to="/#support">Our Support</Link>
             </div>
           </div>
           <div className='link'>
-            <a href="#incubations">Incubations</a>
+            <Link to="/#incubations">Incubations</Link>
             <div className="tabInner">
-              <a href="#darki">Directors</a>
-              <a href="#talks">Talks about us!</a>
+              <Link to="/#darki">Directors</Link>
+              <Link to="/#talks">Talks about us!</Link>
             </div>
           </div>
-          <a href="#events" className='link'>Events</a>
-          <a href="#gallery" className='link'>Gallery</a>
-          <a href="#footer" className='link'>Contact</a>
-          <a href="src/img/background_img/Rulebook.pdf" className='link' download="Tinkering Lab">Tinkering lab</a>
+          <Link to="/#events" className='link'>Events</Link>
+          <Link to="/#gallery" className='link'>Gallery</Link>
+          {/* <a href="#footer" className='link'>Contact</a>*/}
+  
           {/* <Link className='link' to="/team">Team</Link> */}
+          <div className='link'>
+            <Link to="/professor">Team</Link>
+            <div className="tabInner">
+              <Link to="/professor">Professors</Link>
+              <Link to="/student">Students</Link>
+              <Link to="/Admin">Admin</Link>
+            </div>
+          </div> 
+          <a href="https://tinkering-lab.onrender.com/" className='link' download="Tinkering Lab">Tinkering lab</a>
 
         </nav>
 
@@ -95,9 +106,9 @@ const Navbar = () => {
                 <a href="#incubations">Incubations</a>
                 <a href="#events" className='link'>Events</a>
                 <a href="#gallery" className='link'>Gallery</a>
-                <a href="src/img/background_img/Rulebook.pdf" className='link' download="Tinkering Lab">Tinkering lab</a>
-                {/* <a href="#team" className='link'>Team</a> */}
-                <a href="#footer" className='link'>Contact</a>
+                <a href="#team" className='link'>Team</a> 
+                <a href="https://tinkering-lab.onrender.com/" className='link' download="Tinkering Lab">Tinkering lab</a>
+  {/*<a href="#footer" className='link'>Contact</a>*/}
               </div>
               <div onClick={() => setIsOpen(false)} className="crossBtn">
                 X
