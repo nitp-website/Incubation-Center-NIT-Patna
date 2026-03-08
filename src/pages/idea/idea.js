@@ -71,7 +71,23 @@ const IdeaJs = async (e) => {
       });
 
       const data = await response.json();
-
+      try {
+        await fetch("http://localhost:5000/api/ideamail/create", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            name: fullName.value,
+            email: email.value,
+            subject: subject.value,
+            message: message.value,
+            phone: phone.value,
+          })
+        });
+      } catch (backendError) {
+        console.error("Error sending mail data to backend point:", backendError);
+      }
       if (data.success) {
         Swal.fire({
           title: 'Success!',
