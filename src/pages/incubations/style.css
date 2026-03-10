@@ -209,11 +209,18 @@ a {
   text-decoration: underline;
 }
 
+.card_footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
 .card__button {
   display: inline-block;
   background-color: var(--first-color);
   padding: 0.75rem 1.5rem;
-  border-radius: 0.25rem;
+  border-radius: 999px;
   color: var(--dark-color);
   font-weight: 600;
 }

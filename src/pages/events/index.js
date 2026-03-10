@@ -25,7 +25,7 @@ const Events = () => {
                 <h1>Orientation Session 2023</h1>
                 <p>Date: 21/09/2023</p>
                 <p>Venue: CV Raman Hall</p>
-                <a href="events timeline/index.html" className="btn">View More</a>
+                <a href="events timeline/index.html" className="btn">View More →</a>
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@ const Events = () => {
             <h1>PitchTember 2023</h1>
             <p>Date: 24/11/2023 to 18/12/2023</p>
             <p>Venue: CV Raman Hall</p>
-                <a href="https://www.pitchtember.tech/" className="btn">View More</a>
+                <a href="https://www.pitchtember.tech/" className="btn">View More →</a>
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@ const Events = () => {
             <h1>Stock Market Simulation</h1>
             <p>Date: 09/02/2024</p>
             <p>Venue: Online</p>
-     <a href="events timeline/index.html" className="btn">View More</a>
+     <a href="events timeline/index.html" className="btn">View More →</a>
    </div>
  </div>
 
@@ -64,7 +64,7 @@ const Events = () => {
         </div>
 
         <div className="events_btn">
-          <a href="/timeline" className="btn">View More</a>
+          <a href="/timeline" className="btn">View More →</a>
         </div>
       </section>
     </div>

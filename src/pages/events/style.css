@@ -98,9 +98,8 @@ font-size: 1rem;
 .events_btn{
 width: 240px;
 display: flex ;
+justify-content: flex-end;
 margin-top: 300px;
-
-margin: auto;
 }
 .events_btn .btn{
   margin-left: 55px;
@@ -140,14 +139,14 @@ margin: auto;
   }
   .events_btn{
    
-    margin-top: 0px;
-    margin: auto;
+    margin-top: 300px;
+    display: flex;
+    justify-content: flex-end;
     width:100px;
    
   }
   .events_btn .btn{
  font-size: 1rem;
- margin: auto;
  height: 28px;
  padding: 6px;
   }

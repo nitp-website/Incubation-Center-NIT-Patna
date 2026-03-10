@@ -52,6 +52,11 @@
   object-fit: cover;
   transition: transform 0.5s;
 }
+.events_btn{
+  width: 93%;
+  display: flex;
+  justify-content: end;
+}
 @media screen and (max-width: 765px){
   .gallerydiv{
     width: 30%;

@@ -378,6 +378,9 @@ const Talks =  () => {
         
       </div>
     </div>
+    <div className="talks_btn">
+       <a href="/timeline" className="btn">View More →</a>
+      </div>
     {/* <div class="talks_btn" data-aos="fade-up">
           <button className='btn' onClick={()=>navigate('/talksmore')}> 
       Litsen More</button>
