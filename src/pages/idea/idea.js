@@ -71,7 +71,6 @@ const IdeaJs = async (e) => {
       });
 
       const data = await response.json();
-
       if (data.success) {
         Swal.fire({
           title: 'Success!',
