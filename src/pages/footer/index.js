@@ -5,7 +5,6 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { RiLinkedinBoxFill } from "react-icons/ri";
 import { FaTwitter } from "react-icons/fa";
-import Login from '../login/login';
 import { Link } from 'react-router-dom';
 const Footer = () => {
   var currentTime = new Date();

@@ -1,7 +1,7 @@
 import Swal from 'sweetalert2';
 
 const IdeaJs = async (e) => {
-  e.preventDefault(); // Prevent the default form submission behavior
+  e.preventDefault();
 
   const form = document.querySelector("form");
   const fullName = document.getElementById("name");
@@ -45,7 +45,10 @@ const IdeaJs = async (e) => {
       email.classList.add("error");
       email.parentElement.classList.add("error");
 
-      errorTxtEmail.innerHTML = email.value !== "" ? "Enter a valid email address" : "Email Address can't be blank";
+      errorTxtEmail.innerHTML =
+        email.value !== ""
+          ? "Enter a valid email address"
+          : "Email Address can't be blank";
     } else {
       email.classList.remove("error");
       email.parentElement.classList.remove("error");
@@ -61,38 +64,48 @@ const IdeaJs = async (e) => {
     !subject.classList.contains("error") &&
     !message.classList.contains("error")
   ) {
-    const formData = new FormData(form);
-    formData.append("access_key", "da9045aa-c37f-471c-a85d-a94d37e076aa");
-    formData.append("from_name",fullName.value)
+
+    const ideaPayload = {
+      name: fullName.value,
+      email: email.value,
+      subject: subject.value,
+      message: message.value,
+      phone: phone.value,
+    };
+
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+
+      await fetch("http://localhost:5000/api/ideaMail/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(ideaPayload)
+      });
+
+      const formData = new FormData(form);
+      formData.append("access_key", "your-key");
+
+      await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         body: formData
       });
 
-      const data = await response.json();
-      if (data.success) {
-        Swal.fire({
-          title: 'Success!',
-          text: 'Your message has been sent successfully!',
-          icon: 'success',
-          confirmButtonText: 'OK'
-        });
-        form.reset();
-      } else {
-        Swal.fire({
-          title: 'Error!',
-          text: data.message || 'Something went wrong.',
-          icon: 'error',
-          confirmButtonText: 'OK'
-        });
-      }
+      Swal.fire({
+        title: 'Success!',
+        text: 'Idea submitted successfully!',
+        icon: 'success'
+      });
+
+      form.reset();
+
     } catch (error) {
+      console.error(error);
+
       Swal.fire({
         title: 'Error!',
-        text: error.message || 'Something went wrong.',
-        icon: 'error',
-        confirmButtonText: 'OK'
+        text: error.response?.data?.message || 'Something went wrong.',
+        icon: 'error'
       });
     }
   }
