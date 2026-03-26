@@ -4,7 +4,6 @@ import {  Routes, Route } from 'react-router-dom';
 import './App.css';
 // import Home from './pages/Home'; 
 import Navbar from './pages/Navbar';
-import Login from './pages/login/login.js'
 import Register from './pages/register/register.js'
 // import Director from './pages/Directors';  
 // import About from './pages/about';
@@ -32,9 +31,10 @@ import React from 'react';
 import Talks_LitsenMore from './pages/talks_LitsenMore/index.js';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
-
-
-
+import Dashboard from './pages/AdminDashboard/Dashboard.js';
+import Login from './pages/team/Admin.js';
+import ProtectedRoute from './pages/routes/protectedroute.js';
+import { AuthProvider } from "./context/authcontext.js";
 
 function App() {
   // const fun = () => {
@@ -62,7 +62,8 @@ function ScrollToHash() {
 
   return (
     <div className="App"> 
-    {/* < Navbar/> */}
+    {/* < Navbar/> */}  
+    <AuthProvider>
     <ScrollToHash />
     <Routes>
           {/* <Route  path="talks_LitsenMore/index.js" element={<Talks_LitsenMore/>}/>  */}
@@ -71,15 +72,21 @@ function ScrollToHash() {
           <Route path="/pag" element={<Pag/>}/>
           <Route path="/timeline" element={<Timeline/>}/>
           <Route  path="Notice/index.js" element={<Notice/>}/> 
-          <Route path="/login" element={<Login/>}/>
           <Route  path="Notice" element={<Notice/>}/> 
           <Route path='/professor' element={<Professor />} />
           <Route path='/student' element={<Student />}/>
-          <Route path='/admin' element={<Admin />}/>
+          {/* <Route path='/admin' element={<Admin />}/> */}
           <Route path="/gallery" element={<Gallery1/>}/>
           <Route path="/talksmore" element={<Talks_LitsenMore/>}/>
-
-    
+          <Route path="/admin" element={<Login />}/>
+          <Route
+            path="/admin/dashboard"
+            element={
+              <ProtectedRoute allowedRoles={["ADMIN", "SUPER_ADMIN"]}>
+                <Dashboard />
+              </ProtectedRoute>
+            }
+            />
         </Routes>
         {/* <Gallery/> */}
         {/* <Footer/> */}
@@ -96,6 +103,7 @@ function ScrollToHash() {
         {/* <Gallery/> */}
          
         {/* <Faqs/> */}
+    </AuthProvider>
     </div>
   );
 }
