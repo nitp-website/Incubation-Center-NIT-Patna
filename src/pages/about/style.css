@@ -1,118 +1,143 @@
 /* about css */
 
 #about {
-    /* background: linear-gradient(45deg, transparent 49%, #27496D 49% 51%, transparent 51%) , linear-gradient(-45deg, transparent 49%, #27496D 49% 51%, transparent 51%); */
-        /* background-size: 3em 3em; */
-        /* background-color: var(--fouth-main-color); */
-        /* opacity: 1;   */
-    
-        background-color: #0a0a0a;
-        opacity: 1;
-        background-image: radial-gradient( #0a0a0a 0%, #000 100%);
-        background-size: 16px 16px;
-    position: relative;  
-    padding: 10rem 9% 4rem;
-    height: auto;
-    /* margin-top: -30px; */
+  /* background: linear-gradient(45deg, transparent 49%, #27496D 49% 51%, transparent 51%) , linear-gradient(-45deg, transparent 49%, #27496D 49% 51%, transparent 51%); */
+  /* background-size: 3em 3em; */
+  /* background-color: var(--fouth-main-color); */
+  /* opacity: 1;   */
+
+  background-color: #0a0a0a;
+  opacity: 1;
+  background-image: radial-gradient(#0a0a0a 0%, #000 100%);
+  background-size: 16px 16px;
+  position: relative;
+  padding: 10rem 9% 4rem;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  /* margin-top: -30px; */
+}
+
+.aboutdiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  ;
+  width: 100%;
+  max-width: 100%;
+}
+
+.building-img {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.building-img img {
+  width: min(360px, 100%);
+  height: auto;
+  box-shadow: 0 0 25px rgba(0, 238, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-content {
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  color: #aef;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.about-content ul li {
+  font-size: 1.6rem;
+  row-gap: 1rem;
+  list-style: initial;
+  color: #aef;
+}
+
+.about-content h3 {
+  color: #aef;
+}
+
+.about-content h1 {
+  font-size: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  color: #aaa;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  color: #aaa;
+  ;
+}
+
+
+@media screen and (max-width:988px) {
+  .aboutdiv {
+    grid-template-columns: 1fr;
+
   }
-  
-  .aboutdiv{ 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;;
-  }
-  
-  .building-img{   
-    height: 100%; 
+
+  .building-img {
     width: 100%;
-    display: flex;
-    justify-content: center;  
-    align-items: center;
   }
-  
-  .building-img img{
-    width: 360px; 
-    height:auto;
-    box-shadow: 0 0 25px rgba(0, 238, 255, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  .about-content {
+    margin-top: 30px;
   }
-  
-  .about-content{ 
-  
-    display: flex; 
-    flex-direction: column;
-    flex-wrap: nowrap; 
-    gap: 2rem;
-    color:#aef;
-  }
-  
-  .about-content ul li{ 
-    font-size:1.6rem ;
-    row-gap: 1rem;
-    list-style: initial;
-    color:#aef;
-  }
-  .about-content h3{
-    color: #aef;
-  }
-  .about-content h1{
-    font-size: 5rem; 
-    display: flex;
-    justify-content: flex-start;
-    color:#aaa;
-  }
-  
-  .about-content p{ 
-    font-size:1.6rem ;
-    color: #aaa;;
-  }
-  
-  
-  @media screen and (max-width:988px){
-   .aboutdiv{
-    flex-direction: column;
-   
-   }
-   .building-img{
-  
-    width:80%;
-   }
-   .about-content{
-    margin-top:30px;
-   }
-   .about-content h1{
+
+  .about-content h1 {
     text-align: center;
-    width:fit-content;
+    width: fit-content;
     margin: auto;
-   }
-   .heading{
-    
-   }
   }
-  @media screen and (max-width:558px){
-    .building-img{
-      display:none;
-    }
-    div.heading{
-     margin-top: -80px;
-       
-    }
-    .aboutdiv{ 
-    grid-template-columns: 1fr 0fr;
-    }
 
-    div.heading h1{
-      font-size: 3rem;
-      width:fit-content;
-    
-     text-align: center;
-    }
-    .about-content p{
-      font-size: 5rem;
-    }
-    .about-content ul li{
-      font-size: 1rem;
-    }
+}
+
+@media screen and (max-width:558px) {
+  #about {
+    padding: 8rem 18px 3rem;
+  }
+
+  .building-img {
+    display: none;
+  }
+
+  div.heading {
+    margin-top: -80px;
 
   }
-  /* about css */
+
+  .aboutdiv {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  div.heading h1 {
+    font-size: 2.6rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .about-content ul li {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .about-content ul {
+    padding-left: 1.1rem;
+  }
+
+}
+/* about css */

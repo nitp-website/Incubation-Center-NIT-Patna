@@ -66,10 +66,10 @@
 } 
 .App {
   background-color: #000000;
-  /* background: var(--third-main-color);
+  /*background: var(--third-main-color);
   color: var(--text-color);
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
-    url(img/background_img/IMG20230921194023.jpg);
+  url(img/background_img/IMG20230921194023.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -108,6 +108,28 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+body,
+#root,
+.App,
+.Homes {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+section {
+  max-width: 100%;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
 }
 
 .lkclr{
