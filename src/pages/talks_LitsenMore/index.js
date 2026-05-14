@@ -9,111 +9,59 @@ const TalksLitsenMore = () =>  {
   return (
      <div id="Talks_viewMore">
         <Navbar/>
-        <div class="container_header1">
+        <div className="container_header1">
       <div>
       <h1>Entrepreneur's Talks</h1>
       </div>
       </div>
-{/* <div class="heading">
+{/* <div className="heading">
     Entrepreneurship Talk
 </div> */}
-<div class="main11">
-    <div class="row11">
-        <div class="card11">
-            <div class="comma">"</div>
-            <div class="text">
+<div className="main11">
+    <div className="row11">
+        <div className="card11">
+            <div className="comma">"</div>
+            <div className="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et impedit quam vitae sint, quaerat repellendus libero voluptatum veniam dolorem architecto, quisquam est in consectetur culpa, praesentium obcaecati aperiam deleniti? Sequi ea quia eum harum unde aperiam a illum delectus.
             </div>
-            <div class="line"></div>
-            <div class="id11">
-                <div class="logo11">
+            <div className="line"></div>
+            <div className="id11">
+                <div className="logo11">
 
                 </div>
-                <div class="name11">
+                <div className="name11">
                     Harshit verma (2022-2024)<br/>
                     Agora Analytics
                 </div>
             </div>
         </div> 
-        <div class="card11">
-            <div class="comma">"</div>
-            <div class="text">
+        <div className="card11">
+            <div className="comma">"</div>
+            <div className="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et impedit quam vitae sint, quaerat repellendus libero voluptatum veniam dolorem architecto, quisquam est in consectetur culpa, praesentium obcaecati aperiam deleniti? Sequi ea quia eum harum unde aperiam a illum delectus.
             </div>
-            <div class="line"></div>
-            <div class="id11">
-                <div class="logo11">
+            <div className="line"></div>
+            <div className="id11">
+                <div className="logo11">
 
                 </div>
-                <div class="name11">
+                <div className="name11">
                     Harshit verma (2022-2024)<br/>
                     Agora Analytics
                 </div>
             </div>
         </div>
-        <div class="card11">
-            <div class="comma">"</div>
-            <div class="text">
+        <div className="card11">
+            <div className="comma">"</div>
+            <div className="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et impedit quam vitae sint, quaerat repellendus libero voluptatum veniam dolorem architecto, quisquam est in consectetur culpa, praesentium obcaecati aperiam deleniti? Sequi ea quia eum harum unde aperiam a illum delectus.
             </div>
-            <div class="line"></div>
-            <div class="id11">
-                <div class="logo11">
+            <div className="line"></div>
+            <div className="id11">
+                <div className="logo11">
 
                 </div>
-                <div class="name11">
-                    Harshit verma (2022-2024)<br/>
-                    Agora Analytics
-                </div>
-            </div>
-        </div>
-    
-        
-    </div>
-    <div class="row11">
-        <div class="card11">
-            <div class="comma">"</div>
-            <div class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et impedit quam vitae sint, quaerat repellendus libero voluptatum veniam dolorem architecto, quisquam est in consectetur culpa, praesentium obcaecati aperiam deleniti? Sequi ea quia eum harum unde aperiam a illum delectus.
-            </div>
-            <div class="line"></div>
-            <div class="id11">
-                <div class="logo11">
-
-                </div>
-                <div class="name11">
-                    Harshit verma (2022-2024)<br/>
-                    Agora Analytics
-                </div>
-            </div>
-        </div>
-        <div class="card11">
-            <div class="comma">"</div>
-            <div class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et impedit quam vitae sint, quaerat repellendus libero voluptatum veniam dolorem architecto, quisquam est in consectetur culpa, praesentium obcaecati aperiam deleniti? Sequi ea quia eum harum unde aperiam a illum delectus.
-            </div>
-            <div class="line"></div>
-            <div class="id11">
-                <div class="logo11">
-
-                </div>
-                <div class="name11">
-                    Harshit verma (2022-2024)<br/>
-                    Agora Analytics
-                </div>
-            </div>
-        </div>
-        <div class="card11">
-            <div class="comma">"</div>
-            <div class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et impedit quam vitae sint, quaerat repellendus libero voluptatum veniam dolorem architecto, quisquam est in consectetur culpa, praesentium obcaecati aperiam deleniti? Sequi ea quia eum harum unde aperiam a illum delectus.
-            </div>
-            <div class="line"></div>
-            <div class="id11">
-                <div class="logo11">
-
-                </div>
-                <div class="name11">
+                <div className="name11">
                     Harshit verma (2022-2024)<br/>
                     Agora Analytics
                 </div>
@@ -122,50 +70,102 @@ const TalksLitsenMore = () =>  {
     
         
     </div>
-    <div class="row11">
-        <div class="card11">
-            <div class="comma">"</div>
-            <div class="text">
+    <div className="row11">
+        <div className="card11">
+            <div className="comma">"</div>
+            <div className="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et impedit quam vitae sint, quaerat repellendus libero voluptatum veniam dolorem architecto, quisquam est in consectetur culpa, praesentium obcaecati aperiam deleniti? Sequi ea quia eum harum unde aperiam a illum delectus.
             </div>
-            <div class="line"></div>
-            <div class="id11">
-                <div class="logo11">
+            <div className="line"></div>
+            <div className="id11">
+                <div className="logo11">
 
                 </div>
-                <div class="name11">
+                <div className="name11">
                     Harshit verma (2022-2024)<br/>
                     Agora Analytics
                 </div>
             </div>
         </div>
-        <div class="card11">
-            <div class="comma">"</div>
-            <div class="text">
+        <div className="card11">
+            <div className="comma">"</div>
+            <div className="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et impedit quam vitae sint, quaerat repellendus libero voluptatum veniam dolorem architecto, quisquam est in consectetur culpa, praesentium obcaecati aperiam deleniti? Sequi ea quia eum harum unde aperiam a illum delectus.
             </div>
-            <div class="line"></div>
-            <div class="id11">
-                <div class="logo11">
+            <div className="line"></div>
+            <div className="id11">
+                <div className="logo11">
 
                 </div>
-                <div class="name11">
+                <div className="name11">
                     Harshit verma (2022-2024)<br/>
                     Agora Analytics
                 </div>
             </div>
         </div>
-        <div class="card11">
-            <div class="comma">"</div>
-            <div class="text">
+        <div className="card11">
+            <div className="comma">"</div>
+            <div className="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et impedit quam vitae sint, quaerat repellendus libero voluptatum veniam dolorem architecto, quisquam est in consectetur culpa, praesentium obcaecati aperiam deleniti? Sequi ea quia eum harum unde aperiam a illum delectus.
             </div>
-            <div class="line"></div>
-            <div class="id11">
-                <div class="logo11">
+            <div className="line"></div>
+            <div className="id11">
+                <div className="logo11">
 
                 </div>
-                <div class="name11">
+                <div className="name11">
+                    Harshit verma (2022-2024)<br/>
+                    Agora Analytics
+                </div>
+            </div>
+        </div>
+    
+        
+    </div>
+    <div className="row11">
+        <div className="card11">
+            <div className="comma">"</div>
+            <div className="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et impedit quam vitae sint, quaerat repellendus libero voluptatum veniam dolorem architecto, quisquam est in consectetur culpa, praesentium obcaecati aperiam deleniti? Sequi ea quia eum harum unde aperiam a illum delectus.
+            </div>
+            <div className="line"></div>
+            <div className="id11">
+                <div className="logo11">
+
+                </div>
+                <div className="name11">
+                    Harshit verma (2022-2024)<br/>
+                    Agora Analytics
+                </div>
+            </div>
+        </div>
+        <div className="card11">
+            <div className="comma">"</div>
+            <div className="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et impedit quam vitae sint, quaerat repellendus libero voluptatum veniam dolorem architecto, quisquam est in consectetur culpa, praesentium obcaecati aperiam deleniti? Sequi ea quia eum harum unde aperiam a illum delectus.
+            </div>
+            <div className="line"></div>
+            <div className="id11">
+                <div className="logo11">
+
+                </div>
+                <div className="name11">
+                    Harshit verma (2022-2024)<br/>
+                    Agora Analytics
+                </div>
+            </div>
+        </div>
+        <div className="card11">
+            <div className="comma">"</div>
+            <div className="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et impedit quam vitae sint, quaerat repellendus libero voluptatum veniam dolorem architecto, quisquam est in consectetur culpa, praesentium obcaecati aperiam deleniti? Sequi ea quia eum harum unde aperiam a illum delectus.
+            </div>
+            <div className="line"></div>
+            <div className="id11">
+                <div className="logo11">
+
+                </div>
+                <div className="name11">
                     Harshit verma (2022-2024)<br/>
                     Agora Analytics
                 </div>

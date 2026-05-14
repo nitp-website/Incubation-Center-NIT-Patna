@@ -29,16 +29,16 @@ const GoogleSlider = () => {
     ]
   return (
     <div className='howMain' id='support'>
-    <div class="how_header">
+    <div className="how_header">
       <h1  data-aos="fade-down">How? we Support.</h1>
     </div>
     <div className='slidesMain'> 
         <div className="slideNames" data-aos="fade-up">
  
-            <div onClick={() => setSlide(0)} className={slide == 0 ? 'active' : ''}><h2>Mentorship</h2></div>
-            <div onClick={() => setSlide(1)} className={slide == 1 ? 'active' : ''}><h2>Funding</h2></div>
-            <div onClick={() => setSlide(2)} className={slide == 2 ? 'active' : ''}><h2>Networking</h2></div>
-            <div onClick={() => setSlide(3)} className={slide == 3 ? 'active' : ''}><h2>Workspace</h2></div>
+            <div onClick={() => setSlide(0)} className={slide === 0 ? 'active' : ''}><h2>Mentorship</h2></div>
+            <div onClick={() => setSlide(1)} className={slide === 1 ? 'active' : ''}><h2>Funding</h2></div>
+            <div onClick={() => setSlide(2)} className={slide === 2 ? 'active' : ''}><h2>Networking</h2></div>
+            <div onClick={() => setSlide(3)} className={slide === 3 ? 'active' : ''}><h2>Workspace</h2></div>
         </div>
         <div className='infoSection'>
             <div className='dataSection' data-aos="fade-up-right">

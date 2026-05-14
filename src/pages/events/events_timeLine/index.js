@@ -7,15 +7,15 @@ function Timeline() {
   return (
     <div className='events_timeline'> 
       <Navbar/>
-    <div class="container_header">
+    <div className="container_header">
       <div>
       <h1>Events Timeline</h1>
       </div>
       </div>
-    <div class="timeline">
-      <div class="container left-container">
+    <div className="timeline">
+      <div className="container left-container">
             <img src=" img/IC LOGO (1).png " alt='logo'/>
-            <div class="text-box">
+            <div className="text-box">
                 <h2>Orientation Session 2023</h2>
                 <small>21/09/2023</small>
                 <p>The orientation program aimed to familiarize the students of 2023 
@@ -25,11 +25,11 @@ innovation.
                 </p>
                 
             </div>
-            <span class="left-container-arrow"></span>
+            <span className="left-container-arrow"></span>
         </div>
-        <div class="container right-container">
+        <div className="container right-container">
         <img src=" img/IC LOGO (1).png " alt='logo'/>
-            <div class="text-box">
+            <div className="text-box">
                 <h2>PitchTember 2023</h2>
                 <small>24/11/2023 to 18/12/2023</small>
                 <p>It is a multitude of events, including Udhyamita, Uthaan, Unnayan, 
@@ -38,12 +38,12 @@ across various universities. With 1000+ students presenting 67+
 innovative ideas, the event celebrated excellence by recognizing 
 noteworthy contributions.
                 </p>
-                <span class="right-container-arrow"></span>
+                <span className="right-container-arrow"></span>
             </div>
         </div>
-        <div class="container left-container">
+        <div className="container left-container">
         <img src=" img/IC LOGO (1).png " alt='logo'/>
-            <div class="text-box">
+            <div className="text-box">
                 <h2>Stock Market Simulation</h2>
                 <small> 09/02/2024</small>
                 <p>The      IPSIT      Stock      Market       Simulation, sponsored by StockGro, provided 
@@ -54,40 +54,40 @@ stocks. Almost 300 participants showcased their interest,
 emphasizing the importance of effective trading strategies in 
 achieving success. 
                 </p>
-                <span class="left-container-arrow"></span>
+                <span className="left-container-arrow"></span>
             </div>
         </div>
-        {/* <div class="container right-container">
+        {/* <div className="container right-container">
         <img src=" img/IC LOGO (1).png " alt='logo'/>
-            <div class="text-box">
+            <div className="text-box">
                 <h2>Event name4</h2>
                 <small>timings4</small>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
                     necessitatibus repellendus? Delectus porro laborum dolores maiores explicabo iste minima? Dolor?
                 </p>
-                <span class="right-container-arrow"></span>
+                <span className="right-container-arrow"></span>
             </div>
         </div>
-        <div class="container left-container">
+        <div className="container left-container">
         <img src=" img/IC LOGO (1).png " alt='logo'/>
-            <div class="text-box">
+            <div className="text-box">
                 <h2>Event name5</h2>
                 <small>timings5</small>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
                     necessitatibus repellendus? Delectus porro laborum dolores maiores explicabo iste minima? Dolor?
                 </p>
-                <span class="left-container-arrow"></span>
+                <span className="left-container-arrow"></span>
             </div>
         </div>
-        <div class="container right-container">
+        <div className="container right-container">
         <img src=" img/IC LOGO (1).png " alt='logo'/>
-            <div class="text-box">
+            <div className="text-box">
                 <h2>Event name6</h2>
                 <small>timings6</small>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
                     necessitatibus repellendus? Delectus porro laborum dolores maiores explicabo iste minima? Dolor?
                 </p>
-                <span class="right-container-arrow"></span>
+                <span className="right-container-arrow"></span>
             </div>
         </div> */}
     </div>

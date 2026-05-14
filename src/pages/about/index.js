@@ -12,16 +12,16 @@ const About = () => {
 
   return (
     <div>
-      <section class="about" id="about">
+      <section className="about" id="about">
 
-<div class="aboutdiv">
-  <div class="building-img" data-aos="zoom-in">
+<div className="aboutdiv">
+  <div className="building-img" data-aos="zoom-in">
     <img
       src="https://images.collegedunia.com/public/college_data/images/campusimage/1611227237IMG_20201103_111253.jpg"
       alt="Incubation center NIT Patna"/>
   </div>
 
-  <div class="about-content " > 
+  <div className="about-content" > 
     <div className='heading'><h1 data-aos="fade-down" >About<span style={{color:"#0ef"}}> Us</span></h1></div>
     
     <h3  data-aos="fade-right" >What we do ?</h3>

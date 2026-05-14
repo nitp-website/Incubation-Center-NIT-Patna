@@ -255,8 +255,10 @@ section {
     }
     
     .notice {   
-      width: 50vw;
+      width: 100%;
       margin: auto;
+      display: flex;
+      justify-content: center;
   
     }
     .home-content{
@@ -266,8 +268,8 @@ section {
       align-items:center;
       text-align: center;
     }
-.btn{
-         width:20%;
+    .btn{
+      width:20%;
       text-align: center;
     }
     a.btn{
@@ -279,7 +281,7 @@ section {
     }
     .grid-2{
       margin-top: 28px;
-      width:80%;
+      width:100%;
       margin: auto;
     }
     .typewritter{
@@ -316,7 +318,7 @@ section {
        }
        .grid-2{
         margin-top: 185px;
-        width:80%;
+        width:100%;
       }
       .notice{
         width:100%;
@@ -345,7 +347,7 @@ section {
     }
     .grid-2{
       margin-top: 185px;
-      width:80%;
+      width:100%;
     }
     .notice{
       width:100%;

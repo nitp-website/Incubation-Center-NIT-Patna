@@ -1,155 +1,336 @@
-
-
-/* header css */
-
 .headerContainer {
-  position: fixed;
-  left: 0;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
   width: 100%;
-  z-index: 999;
+  max-width: 100%;
+  overflow-x: clip;
+  transform: none !important;
+  z-index: 9000;
 }
 
-.headerContainer .header {
-    top: 0;
-    left: 0;
-    /* width: 100%;  */
+.header {
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  min-height: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: visible;
+  box-sizing: border-box;
+  z-index: 1;
+  transition: padding 0.35s ease, min-height 0.35s ease, height 0.35s ease, background 0.35s ease, backdrop-filter 0.35s ease;
+}
+
+.logo1,
+.logo2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  max-width: 24vw;
+  max-height: calc(100% - 8px);
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.logo1 {
+  width: 92px;
+  height: 92px;
+}
+
+.logo2 {
+  width: 80px;
+  height: 80px;
+}
+
+.headerContainer.scrolled .logo1 {
+  width: 74px;
+  height: 74px;
+}
+
+.headerContainer.scrolled .logo2 {
+  width: 70px;
+  height: 70px;
+}
+
+.logo1 img,
+.logo2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* prevents cutting */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 28px; /* slightly more spacing */
+}
+
+.navbar a {
+   position: relative;
+  text-decoration: none;
+  color: white; /* adjust if needed */
+  font-size: 17px;
+  font-weight: 600;
+  transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.headerContainer.scrolled .navbar a {
+  font-size: 15px;
+}
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* space below text */
+  width: 0%;
+  height: 2px;
+  background-color: #00f7ff; /* change color if needed */
+  transition: width 0.3s ease;
+}
+
+/* on hover expand */
+.navbar a:hover::after {
+  width: 100%;
+}
+
+
+.link {
+  position: relative;
+}
+
+.tabInner {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(35, 35, 35, 0.85);
+  padding: 10px;
+  min-width: 160px;
+  z-index: 1000;
+}
+.tabInner a {
+  font-size: 15px;
+}
+
+.headerContainer.scrolled .tabInner a {
+  font-size: 14px;
+}
+
+.link:hover .tabInner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu {
+  display: none;
+  position: static;
+  width: 55px;
+  height: 55px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+
+  z-index: 2000;
+}
+
+.mobileMenuContainer {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.86);
+  backdrop-filter: blur(8px);
+  z-index: 10000;
+}
+
+.mobileMenu {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(0, 247, 255, 0.12), transparent 32%),
+    rgba(8, 10, 14, 0.94);
+  padding: 90px 28px 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mobileMenu a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding: 8px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.mobileMenu a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #00f7ff;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.mobileMenu a:hover,
+.mobileMenu a:focus-visible {
+  color: #00f7ff;
+  transform: translateY(-2px);
+}
+
+.mobileMenu a:hover::after,
+.mobileMenu a:focus-visible::after {
+  width: 100%;
+}
+
+.crossBtn {
+  position: fixed;
+  right: 24px;
+  top: 24px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 10001;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.crossBtn:hover,
+.crossBtn:focus-visible {
+  background: crimson;
+  color: white;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 900px) {
+  .headerContainer {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100%;
+    max-width: 100%;
+    transform: none !important;
+    z-index: 9000;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+  }
+
+  .header {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
     height: 80px;
-    /* background: rgba(0, 0, 0, 0.3); */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 0;
-    /* padding: 0 30px; */
-    /* border-radius: 10px; */
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur( 2px );
-    /* border-bottom: 1px solid black; */
+    min-height: 80px;
+    padding-top: 6px !important;
+    padding-bottom: 4px !important;
+  padding-left: 18px !important;
+  padding-right: 18px !important;
+    background: rgba(0, 0, 0, 0.72) !important;
+    backdrop-filter: blur(8px) !important;
   }
-  
-  
-  .headerContainer .logo1 img {
-    width: 90px;
-  }    
-  
-  .headerContainer .logo2 img {
-    width: 90px;
+
+  .headerContainer.scrolled .header {
+    padding-left: 22px !important;
+    padding-right: 22px !important;
   }
-  
-  .headerContainer a.logo2 {
-    width: 6%;
+
+  .logo1,
+  .logo2 {
+    width: 62px;
+    height: 62px;
+    max-width: 21vw;
+    max-height: 68px;
   }
-  
-  .headerContainer nav.navbar {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 3%;
+
+  .logo1 {
+    width: min(70px, 21vw);
+    height: min(70px, 68px);
   }
-  
-  .headerContainer .navbar .link {
-    color: #ffffff;
-    font-size: 1.7rem;
-    margin-left: 3%;
-    position: relative;
+
+  .headerContainer.scrolled .logo1 {
+    width: 58px;
+    height: 58px;
   }
-  
-  .headerContainer .navbar .link::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0%;
-    width: 0%;
-    height: 2px;
-    background: var(--main-color);
-    transition: 0.4s;
-  } 
-  
-  .headerContainer .navbar .link:hover::before {
-    width: 100%;
+
+  .headerContainer.scrolled .logo2 {
+    width: 54px;
+    height: 54px;
   }
-  
-  /* header css */
-  /* .link{
-    position: relative;
-  } */
-  
-  .headerContainer  .tabInner{
-    display: none
-    ; width: 150px;
-    position: absolute;
-    top: 28px;
-    left: 0px;
-    background: rgba(80, 80, 80, 0.5);
-    padding: 10px;
-    border-radius: 5px;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur( 4px );
-    flex-direction: column;
-    gap: 5px;
+}
+
+@media (max-width: 430px) {
+  .menu {
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
   }
-  
-  .headerContainer .link:hover .tabInner{
-    display: flex;
+
+  .header {
+    height: 76px;
+    min-height: 76px;
+    padding-top: 6px !important;
+    padding-bottom: 4px !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
   }
-  
-  .headerContainer .menu{
-    display: none;
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
+
+  .headerContainer.scrolled .header {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
   }
-  
-  .headerContainer .mobileMenuContainer{
-    display: none;
+
+  .logo1,
+  .logo2 {
+    width: 58px;
+    height: 58px;
+    max-width: 20vw;
+    max-height: 64px;
   }
-  
-  .headerContainer .crossBtn{
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    padding: 5px 12px;
-    cursor: pointer;
-    background-color: grey;
-    border-radius: 50%;
+
+  .logo1 {
+    width: min(66px, 20vw);
+    height: min(66px, 64px);
   }
-  
-  .headerContainer .mobileMenu a:hover {
-    color: rgb(255, 242, 0);
+
+  .headerContainer.scrolled .logo1 {
+    width: 54px;
+    height: 54px;
   }
-  
-  @media screen and (max-width: 768px) {
-    .headerContainer .menu {
-      display: block;
-    }
-  
-    .headerContainer .mobileMenuContainer{
-      top: 0;
-      left: 0;
-  
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;  
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.9);
-      backdrop-filter: blur(6px);
-      /* -webkit-backdrop-filter: blur(6px); */
-    }
-  
-    .headerContainer .mobileMenu{
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-  
-    .headerContainer nav.navbar {
-        display: none;
-      }
+
+  .headerContainer.scrolled .logo2 {
+    width: 50px;
+    height: 50px;
   }
-  @media screen and (max-width: 747px){
-         .menu{
-          margin-left: 140px;
-         }
-  }
+}
