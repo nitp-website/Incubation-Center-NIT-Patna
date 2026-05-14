@@ -30,7 +30,7 @@ const Navbar = () => {
   }, []);
 
   const navbarStyle = {
-    padding: scrolled ? "2px 25px" : "0 9%",
+    padding: scrolled ? "6px 25px 4px" : "10px 9% 6px",
     background: scrolled ? "rgba(0, 0, 0, 0.45)" : "transparent",
     backdropFilter: scrolled ? "blur(4px)" : "blur(0)",
     transition: "all 0.3s ease",
@@ -40,18 +40,13 @@ const Navbar = () => {
     top: "0px",
   };
 
-  const logoStyle = {
-    width: scrolled ? "70px" : "80px",
-    height: scrolled ? "70px" : "80px",
-  };
-
   return (
     <div
       className={`headerContainer ${scrolled ? "scrolled" : ""}`}
       style={headerStyle}
     >
       <header className="header" style={navbarStyle}>
-        <a href="https://www.nitp.ac.in/" className="logo1" style={logoStyle}>
+        <a href="https://www.nitp.ac.in/" className="logo1">
           <img src="/img/download-removebg-preview.png" alt="NITP logo" />
         </a>
 
@@ -137,7 +132,7 @@ const Navbar = () => {
           </div>
         )}
 
-        <a className="logo2" href="/" style={logoStyle}>
+        <a className="logo2" href="/">
           <img src="/img/IC LOGO (1).png" alt="Incubation Centre logo" />
         </a>
       </header>

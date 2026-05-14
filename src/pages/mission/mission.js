@@ -4,86 +4,86 @@ import "./style.css";
 const Mission = () => {
   return (
     <div>
-      <section class="goals" id="goals">
-    <div class="container">
+      <section className="goals" id="goals">
+    <div className="container">
       <h1  data-animation="slideInUp" data-animation-delay=".3s"  style={{ color: "#0ef" }}>Our Mission</h1>
-      <div class=" container_details ">
-        <div class="card__container">
-          <article class="card__article"  data-animation="zoomReverseIn" data-animation-delay=".3s">
+      <div className=" container_details ">
+        <div className="card__container">
+          <article className="card__article"  data-animation="zoomReverseIn" data-animation-delay=".3s">
 
-            <div class="card_img">
-              <div class="card__scale-1"></div>
-              <div class="card__scale-2"></div>
+            <div className="card_img">
+              <div className="card__scale-1"></div>
+              <div className="card__scale-2"></div>
 
-              <div class="card__shape-1">
-                <div class="card__shape-2"></div>
-                <div class="card__shape-3">
-                  <i class="ri-flashlight-line card__icon"></i>
+              <div className="card__shape-1">
+                <div className="card__shape-2"></div>
+                <div className="card__shape-3">
+                  <i className="ri-flashlight-line card__icon"></i>
                 </div>
               </div>
             </div>
-            <div class="card__data">
-              <h2 class="card__title">Empower Startup's</h2>
+            <div className="card__data">
+              <h2 className="card__title">Empower Startup's</h2>
 
-              <p class="card__description">
+              <p className="card__description">
                 Gradient card, with bright edges
                 that gives it a cool look.
               </p>
 
 
-              <a href="#" class="card__button">
+              <a href="#" className="card__button">
                 Continue learning
               </a>
             </div>
           </article>
 
-          <article class="card__article card__orange"  data-animation="zoomReverseIn" data-animation-delay=".3s">
-            <div class="card_img">
-              <div class="card__scale-1"></div>
-              <div class="card__scale-2"></div>
+          <article className="card__article card__orange"  data-animation="zoomReverseIn" data-animation-delay=".3s">
+            <div className="card_img">
+              <div className="card__scale-1"></div>
+              <div className="card__scale-2"></div>
 
-              <div class="card__shape-1">
-                <div class="card__shape-2"></div>
-                <div class="card__shape-3">
-                  <i class="ri-fire-line card__icon"></i>
+              <div className="card__shape-1">
+                <div className="card__shape-2"></div>
+                <div className="card__shape-3">
+                  <i className="ri-fire-line card__icon"></i>
                 </div>
               </div>
             </div>
-            <div class="card__data">
-              <h2 class="card__title">Mentorship</h2>
+            <div className="card__data">
+              <h2 className="card__title">Mentorship</h2>
 
-              <p class="card__description">
+              <p className="card__description">
                 Gradient card, with bright edges
                 that gives it a cool look.
               </p>
 
-              <a href="#" class="card__button">
+              <a href="#" className="card__button">
                 Continue learning
               </a>
             </div>
           </article>
 
-          <article class="card__article card__green"  data-animation="zoomReverseIn" data-animation-delay=".3s">
-            <div class="card_img">
-              <div class="card__scale-1"></div>
-              <div class="card__scale-2"></div>
+          <article className="card__article card__green"  data-animation="zoomReverseIn" data-animation-delay=".3s">
+            <div className="card_img">
+              <div className="card__scale-1"></div>
+              <div className="card__scale-2"></div>
 
-              <div class="card__shape-1">
-                <div class="card__shape-2"></div>
-                <div class="card__shape-3">
-                  <i class="ri-shining-line card__icon"></i>
+              <div className="card__shape-1">
+                <div className="card__shape-2"></div>
+                <div className="card__shape-3">
+                  <i className="ri-shining-line card__icon"></i>
                 </div>
               </div>
             </div>
-            <div class="card__data">
-              <h2 class="card__title">Build Community</h2>
+            <div className="card__data">
+              <h2 className="card__title">Build Community</h2>
 
-              <p class="card__description">
+              <p className="card__description">
                 Gradient card, with bright edges
                 that gives it a cool look.
               </p>
 
-              <a href="#" class="card__button">
+              <a href="#" className="card__button">
                 Continue learning
               </a>
             </div>

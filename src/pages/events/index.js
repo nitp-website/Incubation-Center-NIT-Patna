@@ -35,7 +35,7 @@ const Events = () => {
               <div className="flip-card-front">
                 <img src="img/events/Events/pitchtember.jpg" alt="event"/>
               </div>
-              <div class="flip-card-back">
+              <div className="flip-card-back">
             <h1>PitchTember 2023</h1>
             <p>Date: 24/11/2023 to 18/12/2023</p>
             <p>Venue: CV Raman Hall</p>

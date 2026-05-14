@@ -268,8 +268,8 @@ section {
       align-items:center;
       text-align: center;
     }
-.btn{
-         width:20%;
+    .btn{
+      width:20%;
       text-align: center;
     }
     a.btn{
@@ -363,3 +363,5 @@ section {
       margin-left: -28px;
    }
   }
+
+  
