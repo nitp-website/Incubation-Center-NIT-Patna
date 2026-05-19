@@ -153,3 +153,41 @@
           margin-left: 140px;
          }
   }
+
+  @media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+.menu {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: none;
+}
+
+.menu {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+

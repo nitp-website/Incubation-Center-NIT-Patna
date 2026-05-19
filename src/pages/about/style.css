@@ -115,4 +115,17 @@
     }
 
   }
+
+  .about-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+  .about-content p {
+    font-size: 1.2rem;
+  }
+}
+
+
   /* about css */

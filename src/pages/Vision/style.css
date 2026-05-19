@@ -75,5 +75,10 @@ color:white;
 }
 
 
+@media (max-width: 768px) {
+  .vision_container {
+    flex-direction: column;
+  }
+}
 
 /* vision css */
